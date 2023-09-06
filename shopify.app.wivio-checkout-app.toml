@@ -1,8 +1,8 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-name = "Wivio Checkout App"
-client_id = "f8821cf7780c24e3a996414b877e2b54"
-application_url = "https://domains-competing-uganda-football.trycloudflare.com"
+name = "wivio checkout app"
+client_id = "fadea32d1a1b81c7c5012769c993aa44"
+application_url = "https://huntington-korean-asin-referenced.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://domains-competing-uganda-football.trycloudflare.com/auth/callback",
-  "https://domains-competing-uganda-football.trycloudflare.com/auth/shopify/callback",
-  "https://domains-competing-uganda-football.trycloudflare.com/api/auth/callback"
+  "https://huntington-korean-asin-referenced.trycloudflare.com/auth/callback",
+  "https://huntington-korean-asin-referenced.trycloudflare.com/auth/shopify/callback",
+  "https://huntington-korean-asin-referenced.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
