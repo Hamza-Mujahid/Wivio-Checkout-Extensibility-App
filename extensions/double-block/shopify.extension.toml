@@ -87,6 +87,11 @@ network_access = true
  description = "Enter a Sub Heading Text"
 
 # heading color settings
+ [[settings.fields]]
+ key = "image_size"
+ type = "single_line_text_field"
+ name = "Image Size "
+ description = "Enter a number between 1 to 100"
 
  [[settings.fields]]
  key = "heading_color"

@@ -15,22 +15,24 @@ export default reactExtension(
 );
 
 function Extension() {
-  const {text} = useSettings();
+  const { text, indicatorUrl, image_text_space, image_size } = useSettings();
 
   return (
     <BlockLayout
       rows={['fill']}
       border={'base'}
       borderRadius={'base'}
-      spacing={'loose'}
+      spacing={image_text_space}
       blockAlignment={'center'}
       cornerRadius={'loose'}
       overflow='hidden'
       inlineAlignment={'center'}
     >
-      <Grid columns={['4%', 'auto']} inlineAlignment={'center'} padding={'base'}>
+      <Grid columns={[`${image_size}%`, 'auto']} inlineAlignment={'center'} padding={'base'}>
         <Text >
-          <Image source={'https://static.wixstatic.com/media/963c7d_726dfc69f274458597c1852fa002357b~mv2.gif'} fit={'contain'} />
+          {// @ts-ignore
+            <Image source={indicatorUrl} fit={'contain'} />
+          }
         </Text>
         <Text >{text}</Text>
       </Grid>

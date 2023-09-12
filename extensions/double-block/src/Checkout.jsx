@@ -21,7 +21,7 @@ function Extension() {
   const { extension } = useApi();
   const { image_url, heading, sub_heading } = useSettings();
   const { image_url1, heading1, sub_heading1 } = useSettings();
-  const { heading_color, heading_size } = useSettings();
+  const { heading_color, heading_size, image_size } = useSettings();
   const { sub_heading_color, sub_heading_size } = useSettings();
   const { block_spacing } = useSettings();
   const { block_padding_top, block_padding_right, block_padding_bottom, block_padding_left } = useSettings();
@@ -32,7 +32,8 @@ function Extension() {
           <BlockStack inlineAlignment={'center'} padding={[
             // @ts-ignore
             { block_padding_top }, { block_padding_right }, { block_padding_bottom }, { block_padding_left }]} spacing={block_spacing}>
-            <Grid columns={"10%"} inlineAlignment={'center'}>
+            <Grid // @ts-ignore
+              columns={`${image_size}%`} inlineAlignment={'center'}>
               <Image fit={'cover'} loading='lazy'
                 // @ts-ignore
                 source={image_url}></Image>
@@ -50,7 +51,8 @@ function Extension() {
           <BlockStack inlineAlignment={'center'} padding={[
             // @ts-ignore
             { block_padding_top }, { block_padding_right }, { block_padding_bottom }, { block_padding_left }]} spacing={block_spacing}>
-            <Grid columns={"10%"} inlineAlignment={'center'}>
+            <Grid // @ts-ignore
+              columns={`${image_size}%`} inlineAlignment={'center'}>
               <Image fit={'cover'} loading='lazy'
                 // @ts-ignore
                 source={image_url1}></Image>

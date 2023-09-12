@@ -14,7 +14,7 @@ function Extension() {
   const { image_url1 } = useSettings();
   return (
     <>
-      <BlockStack inlineAlignment={'end'}>
+      <BlockStack inlineAlignment={'end'} >
         <Image fit={'cover'} loading='lazy'
           // @ts-ignore
           source={image_url1}>
